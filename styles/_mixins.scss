@@ -1,4 +1,5 @@
 @mixin button ($bg-color: #fff, $color: #0f5a47) {
+    display: block;
     outline: 0;
     border: 0;
     width: auto;
