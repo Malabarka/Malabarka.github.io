@@ -1,0 +1,131 @@
+@import "../styles/_mixins.scss";
+
+.welcome {
+
+    display: flex;
+    flex-direction: column;
+    background: url("images/bars.png") no-repeat right 28px bottom 71px / auto,
+                #61c4d9 url("images/welcome-bg.png") no-repeat right 0 bottom 0 / auto;
+                 
+    width: 100%;
+    height: 100vh;
+    min-height: 650px;
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 59px;
+        height: 112px;
+        background: url("images/leaf-3.png") no-repeat center / contain;
+        bottom: -51px;
+        left: 30px;
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 460px;
+        height: 341px;
+        background: url("images/berries-with-leaves.png") no-repeat center / contain;
+        bottom: -47px;
+        right: 17px;
+    }    
+
+    &__content {
+        flex-grow: 1;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;  
+        padding: 0 5px;  
+    }
+
+    &__title {
+        display: block;
+        font-size: 60px;
+        font-weight: 700;
+        color: #fff;
+        text-transform: uppercase;
+        max-width: 430px;
+        margin-bottom: 8px;
+        margin-top: 44px;
+        line-height: 1;
+    }
+
+    &__description {
+        font-size: 21px;
+        font-weight: 400;
+        color: #fff;
+        margin-bottom: 30px;
+        max-width: 355px;
+        line-height: 1.2;
+        padding-left: 2px;
+    }
+
+    &__button {
+        @include button;
+        margin-left: 5px;
+
+    }
+
+    &__advantages-container {
+        margin-top: 68px;
+        margin-left: 6px;
+    }    
+}
+
+.advantages {
+    $advantages: &;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    &__item {
+        $advantages-item: &;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-right: 40px;
+        position: relative;
+        font-size: 16px;
+        font-weight: 400;
+        color: #fff;
+        line-height: 1.2;
+    }
+
+    &__image {
+        margin-right: 7px;
+
+        #{$advantages}__item--nature & {
+            width: 44px;
+            height: 41px;
+            background: url("images/two-leaves.png") no-repeat center top / contain;
+        }
+
+        #{$advantages}__item--delivery & {
+            width: 50px;
+            height: 40px;
+            background: url("images/car-with-clock.png") no-repeat center top / contain;
+            margin-right: 13px;
+        }
+
+        #{$advantages}__item--figure & {
+            width: 42px;
+            height: 42px;
+            background: url("images/tape.png") no-repeat center top / contain;
+            margin-right: 9px;
+        }
+    }
+
+    &__text {
+        max-width: 90px;
+        
+        #{$advantages}__item--delivery & {
+            max-width: 64px;
+        }
+    }
+}
+

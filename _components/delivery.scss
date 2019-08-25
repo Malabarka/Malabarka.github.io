@@ -1,0 +1,22 @@
+.delivery {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    min-height: 650px;
+    position: relative;
+    background: url("images/strawberry.png") no-repeat right 14px top 36px / auto;
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        background: url("images/berries-reviews.png") no-repeat left 4px bottom 25px / auto, 
+                    url("images/reviews-bg.png") no-repeat left 0 bottom -50px / auto;
+        width: 145px;
+        height: 321px;
+        bottom: -109px;
+    }
+
+    
+}

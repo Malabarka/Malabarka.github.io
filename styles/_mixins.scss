@@ -1,0 +1,16 @@
+@mixin button ($bg-color: #fff, $color: #0f5a47) {
+    outline: 0;
+    border: 0;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    padding: 20px 35px 17px 34px;
+    font-size: 19px;
+    font-weight: 800;
+    text-transform: uppercase;
+    border-radius: 45px;
+    background: $bg-color;
+    color: $color;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

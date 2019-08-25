@@ -1,0 +1,16 @@
+$black: #000;
+$white: #fff;
+$blue: #61c4d9;
+
+@import 'styles/normalize';
+@import 'styles/_fonts.scss';
+@import 'styles/_variables.scss';
+@import 'styles/_mixins.scss';
+@import 'styles/_layout.scss';
+
+@import '_components/welcome.scss';
+@import '_components/header.scss';
+@import '_components/privilege.scss';
+@import '_components/reviews.scss';
+@import '_components/delivery.scss';
+

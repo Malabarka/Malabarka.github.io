@@ -1,0 +1,54 @@
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+    padding: 0 10px;
+
+    &__logo {
+        width: 53px;
+        height: 38px;
+        background: url("images/logo.png") no-repeat center/contain;
+    }
+
+    &__nav {
+        display: flex;    
+        align-items: center;    
+    }
+
+    &__nav-option {
+        font-size: 18px;
+        font-weight: 400;
+        color: $white;
+        margin: 0 13px;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__link {
+        color: #fff;
+
+        &--phone {
+            font-size: 24px;
+            &::before {
+                content: '';
+                display: inline-block;
+                width: 12px;
+                height: 11px;
+                background: url("images/phone.png") no-repeat center/contain;
+                margin-right: 5px;
+            }
+        }
+    }
+
+    &__phone-container {
+        text-align: right;
+    }
+}
