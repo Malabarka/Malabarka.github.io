@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans&display=swap" rel="stylesheet">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="main.css"/>
 </head>
@@ -125,34 +126,137 @@
     </div>
 </section>
 
+<section class="section bars">
+    <div class="container">
+        <div class="bars__bar">
+            <div class="bars__image" style="background: url('images/sea-bar.png') no-repeat center center / auto"></div>
+            <div class="bars__description">
+                <div class="bars__info">
+                    <div class="bars__info-icon"></div>
+                    <div class="bars__info-text">СОСТАВ</div>
+                    <div class="bars__compos-container composition">
+                        <div class="composition__container">
+                            <div class="composition__row">
+                                <div class="composition__cell composition__cell--image"></div>
+                                <div class="composition__cell composition__cell--name">
+                                    Овёс
+                                </div>
+                                <div class="composition__cell composition__cell--weight"></div>
+                            </div>
+                            <div class="composition__row">
+                                <div class="composition__cell composition__cell--image"></div>
+                                <div class="composition__cell composition__cell--name">
+                                    Морские водоросли
+                                </div>
+                                <div class="composition__cell composition__cell--weight"></div>
+                            </div>
+                            <div class="composition__row">
+                                <div class="composition__cell composition__cell--image"></div>
+                                <div class="composition__cell composition__cell--name">
+                                    Миндаль
+                                </div>
+                                <div class="composition__cell composition__cell--weight"></div>
+                            </div>
+                            <div class="composition__row">
+                                <div class="composition__cell composition__cell--image"></div>
+                                <div class="composition__cell composition__cell--name">
+                                    Сухое молоко
+                                </div>
+                                <div class="composition__cell composition__cell--weight"></div>
+                            </div>
+                            <div class="composition__row">
+                                <div class="composition__cell composition__cell--image"></div>
+                                <div class="composition__cell composition__cell--name">
+                                    Тыкв.семечки
+                                </div>
+                                <div class="composition__cell composition__cell--weight"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bars__title">
+                    Батончик “Морские водоросли”
+                </div>
+                <div class="bars__text">
+                    Гранола из морских водорослей с овсом, миндалем и тыквенными семечками. В состав также входят: сухое молоко, заменитель сахара и какао бобы.
+                </div>
+                <div class="bars__numbers">
+                    <div class="bars__ccal">
+                        <p>Калорийность</p>
+                        <p><strong>120 ккал</strong></p>
+                    </div>
+                    <div class="bars__weight">
+                        <p>Вес</p>
+                        <p><strong>98 грамм</strong></p>
+                    </div>
+                </div>
+                <div class="bars__actions">
+                    <div class="bars__price">140 P</div>
+                    <button class="bars__button">ЗАКАЗАТЬ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section class="section reviews">
     <div class="container">
         <div class="reviews__title">
             ОТЗЫВЫ
         </div>
         <div class=reviews__wrapper>
-             <div class="reviews__content">
-                <div class="reviews__image"></div>
-                <div class="reviews__comment">
-                    <div class="reviews__caption">
-                        Лучший перекус
-                    </div>
-                    <div class="reviews__text">
-                        Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение дня сижу за компьютером 
-                        и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик – он всегда под рукой. Это приятно 
-                        и удобно. 
-                    </div>
-                    <div class="reviews__signature">
-                        Алёна Хмельницкая
-                    </div>
+            <div class="reviews__content">
+                <div class="reviews__person" id="alena-hmel">
+                    <div class="reviews__image" style="background: url('images/alena-hmel.jpg') no-repeat center center / contain;"></div>
+                    <div class="reviews__comment">
+                        <div class="reviews__caption">
+                            Лучший перекус
+                        </div>
+                        <div class="reviews__text">
+                            Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение дня сижу за компьютером 
+                            и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик – он всегда под рукой. Это приятно 
+                            и удобно. 
+                        </div>
+                        <div class="reviews__signature">
+                            Алёна Хмельницкая
+                        </div>
+                    </div> 
+                </div>   
+                <div class="reviews__person" id="vadim-grach">
+                    <div class="reviews__image" style="background: url('images/vadim-grach.jpg') no-repeat center center / contain;"></div>
+                    <div class="reviews__comment">
+                        <div class="reviews__caption">
+                            Идеально подходят для спортсменов
+                        </div>
+                        <div class="reviews__text">
+                            После тренировок всегда хочется быстро закинуться чем-то белковым, потому что до дома ещё нужно доехать. А кушать хочется. Протеиновые батончики всегда выручают в этом плане. Спасибо производителю за этот качественный и экологичный продукт.
+                        </div>
+                        <div class="reviews__signature">
+                            Вадим Грачев
+                        </div>
+                    </div> 
                 </div>
+                <div class="reviews__person" id="maria-orlova">
+                    <div class="reviews__image" style="background: url('images/maria-orlova.jpg') no-repeat center center / contain;"></div>
+                    <div class="reviews__comment">
+                        <div class="reviews__caption">
+                            Лучшие батончики премиум уровня
+                        </div>
+                        <div class="reviews__text">
+                            Батончики понравились. На мой взгляд слегка завышена цена по сравнению с конкурентами, однако, как говорится – оно того стоит. Нравится носить с собой, нравится держать в руке. Ну и конечно же, кушать. Идеально утоляют голод, хоть и не надолго. Через час уже ем ещё один. Но это скорее плюс, чем минус.
+                        </div>
+                        <div class="reviews__signature">
+                            Мария Орлова
+                        </div>
+                    </div> 
+                </div>             
             </div>
             <div class="reviews__switch">
-                <a class="reviews__switch-point reviews__switch-point--alena reviews__switch-point--active"
+                <a href="#alena-hmel" class="reviews__switch-point reviews__switch-point--alena reviews__switch-point--active"
                     style="background: url('images/alena-hmel.jpg') no-repeat center center / cover;"></a>
-                <a class="reviews__switch-point reviews__switch-point--vadim"
+                <a href="#vadim-grach" class="reviews__switch-point reviews__switch-point--vadim"
                     style="background: url('images/vadim-grach.jpg') no-repeat center center / cover;"></a>
-                <a class="reviews__switch-point reviews__switch-point--alena"
+                <a href="#maria-orlova" class="reviews__switch-point reviews__switch-point--alena"
                     style="background: url('images/maria-orlova.jpg') no-repeat center center / cover;"></a>
             </div>
         </div>       
@@ -206,18 +310,24 @@
                         </div>
                     </div>
                     <div class="form__row form__row--payment">
-                            <div class="form__payment-option">
-                                <input type="radio" name="" id="" class="form__input">
-                                <label for="" class="form__label">Потребутеся сдача</label>
+                            <div class="form__payment-option">                                
+                                <label for="cash-pay" class="form__label form__label--radio">Потребутеся сдача
+                                    <input type="radio" name="payment" id="cash-pay" class="form__input-radio">
+                                    <span class="form__copy-radio"></span>
+                                </label>
                             </div>
-                            <div class="form__payment-option">
-                                <input type="radio" name="" id="" class="form__input">
-                                <label for="" class="form__label">Оплата по карте</label>
+                            <div class="form__payment-option">                                
+                                <label for="card-pay" class="form__label form__label--radio">Оплата по карте
+                                    <input type="radio" name="payment" id="card-pay" class="form__input-radio">
+                                    <span class="form__copy-radio"></span>
+                                </label>
                             </div>
                         </div>
-                    <div class="form__row form__row--call">
-                            <input type="checkbox" name="" id="" class="form__input">
-                            <label for="" class="form__label">Не перезванивать</label>
+                    <div class="form__row form__row--call">                            
+                            <label class="form__label form__label--checkbox">Не перезванивать
+                                <input type="checkbox" class="form__input-checkbox">
+                                <span class="form__copy-checkbox"></span>
+                            </label>
                         </div>
                     <div class="form__wrapper-actions">
                         <button class="form__button">

@@ -48,6 +48,7 @@
         padding: 51px 46px 20px;  
         position: relative;
         min-height: 345px;
+        width: 100%;
         
         &::before {
             display: block;
@@ -62,11 +63,23 @@
         }
     }
 
+    &__person {
+        display: none;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        position: relative;
+    }
+
+    &__person:target {
+        display: flex;
+    }
+
     &__image {
         width: 253px;
         min-width: 253px;
         height: 259px;
-        background: url("images/alena-hmel.jpg") no-repeat center center / contain;
+        // background: url("images/alena-hmel.jpg") no-repeat center center / contain;
     }
 
     &__comment {
@@ -115,7 +128,7 @@
         margin: 5px;
         cursor: pointer;
 
-        &--active {
+        &:active {
             &::after {
                 display: block;
                 content: '';
@@ -129,19 +142,5 @@
                 left: calc(50% - 39px);
             }
         }
-
-        
-
-        //  &--alena {
-        //      background: url("images/alena-hmel.jpg") no-repeat ceter center / cover;
-        //  }
-
-        //  &--vadim {
-        //     background: url("images/vadim-grach.jpg") no-repeat ceter center / cover;
-        // }
-
-        // &--alena {
-        //     background: url("images/maria-orlova.jpg") no-repeat ceter center / cover;
-        // }
     }
 }
