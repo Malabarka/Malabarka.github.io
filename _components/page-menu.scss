@@ -1,0 +1,40 @@
+.page-nav {
+    position: fixed;
+    top: 212px;
+    right: 46px;
+
+    &__item {
+        &--active {
+            .page-nav__button {
+                border-color: #fff;
+            }
+        }
+    }
+
+    &__button {
+        background: transparent;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        border: 1px solid transparent;
+        margin-bottom: 3px;
+        position: relative;
+        cursor: pointer;
+
+        &::last-child {
+            margin-bottom: 0;
+        }
+
+        &::before {
+            position: absolute;
+            content: '';
+            width: 6px;
+            height: 6px;
+            background: #ffffff;;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}

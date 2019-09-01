@@ -16,6 +16,7 @@
         width: 161px;
         height: 315px;
         bottom: -109px;
+        z-index: 1;
     }
 
     &__top-part {
@@ -79,22 +80,26 @@
         content: none;
     }
 
-    &__image {
+    &__image-container {
         display: block;
         width: 125px;
         height: 125px;
         border-radius: 50%;
+        background: #f2f5f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-        &--useful {
-            background: #f2f5f4 url("images/man-icon.png") no-repeat center center / auto;
-        }
-        
-        &--tasty {
-            background: #f2f5f4 url("images/smile-icon.png") no-repeat center center / auto;
-        }
+    &__image {
+        fill: none;
+        stroke: #000;
+        width: 70px;
+        height: 70px;
 
-        &--nutritionally {
-            background: #f2f5f4 url("images/muscle-icon.png") no-repeat center center / auto;
+        &--man {
+            stroke-width: .75;
+            stroke-miterlimit: 10;
         }
     }
 
@@ -114,5 +119,6 @@
         color: #666666;
         line-height: 1.2;
         text-align: center;
+        width: 100%;
     }
 }

@@ -54,21 +54,33 @@
                 ЗАКАЗАТЬ
             </button>
             <div class="welcome__advantages-container advantages">
-                <div class="advantages__item advantages__item--nature">
-                    <div class="advantages__image"></div>                    
-                    <div class="advantages__text">
+                <div class="advantages__item">
+                    <div class="advantages__image-container">
+                        <svg class="advantages__image advantages__image--nature">
+                            <use xlink:href="./sprite-svg.svg#leaves"></use>
+                        </svg>
+                    </div>                    
+                    <div class="advantages__text advantages__text--nature">
                         100% натуральный продукт
                     </div>
                 </div>
-                <div class="advantages__item advantages__item--delivery">
-                    <div class="advantages__image"></div>
-                    <div class="advantages__text">
+                <div class="advantages__item">
+                    <div class="advantages__image-container">
+                        <svg class="advantages__image advantages__image--delivery">
+                            <use xlink:href="./sprite-svg.svg#car-with-clock"></use>
+                        </svg>
+                    </div>
+                    <div class="advantages__text advantages__text--delivery">
                         3-5 дней доставка по РФ
                     </div>
                 </div>
-                <div class="advantages__item advantages__item--figure">
-                    <div class="advantages__image"></div>
-                    <div class="advantages__text">
+                <div class="advantages__item">
+                    <div class="advantages__image-container">
+                        <svg class="advantages__image advantages__image--nature">
+                            <use xlink:href="./sprite-svg.svg#tape"></use>
+                        </svg>
+                    </div>
+                    <div class="advantages__text advantages__text--nature">
                         Не портит фигуру
                     </div>
                 </div>
@@ -90,7 +102,11 @@
         </div>
         <div class="privilege__bottom-part">
             <div class="privilege__plus-item plus-item">
-                <div class="plus-item__image plus-item__image--useful"></div>
+                <div class="plus-item__image-container">
+                    <svg class="plus-item__image plus-item__image--man">
+                        <use xlink:href="./sprite-svg.svg#man"></use>
+                    </svg>
+                </div>
                 <div class="plus-item__title">
                     Полезно
                 </div>
@@ -101,26 +117,34 @@
                 </div>
             </div>
             <div class="privilege__plus-item plus-item">
-                    <div class="plus-item__image plus-item__image--tasty"></div>
-                    <div class="plus-item__title">
-                        Вкусно
-                    </div>
-                    <div class="plus-item__description">
-                        Нежный, ненавязчивый, изысканный – 
-                        так клиенты описывают вкусовые 
-                        качества наших батончиков.
-                    </div>
+                <div class="plus-item__image-container">
+                    <svg class="plus-item__image">
+                        <use xlink:href="./sprite-svg.svg#smile"></use>
+                    </svg>
+                </div>
+                <div class="plus-item__title">
+                    Вкусно
+                </div>
+                <div class="plus-item__description">
+                    Нежный, ненавязчивый, изысканный – 
+                    так клиенты описывают вкусовые 
+                    качества наших батончиков.
+                </div>
             </div>
             <div class="privilege__plus-item plus-item">
-                    <div class="plus-item__image plus-item__image--nutritionally"></div>
-                    <div class="plus-item__title">
-                        Питательно
-                    </div>
-                    <div class="plus-item__description">
-                        Высокое содержание качественного 
-                        белка, а также всех необходимых 
-                        витаминов и минералов.
-                    </div>
+                <div class="plus-item__image-container">
+                    <svg class="plus-item__image">
+                        <use xlink:href="./sprite-svg.svg#muscle"></use>
+                    </svg>
+                </div>
+                <div class="plus-item__title">
+                    Питательно
+                </div>
+                <div class="plus-item__description">
+                    Высокое содержание качественного 
+                    белка, а также всех необходимых 
+                    витаминов и минералов.
+                </div>
             </div>
         </div>
     </div>
@@ -128,74 +152,315 @@
 
 <section class="section bars">
     <div class="container">
-        <div class="bars__bar">
-            <div class="bars__image" style="background: url('images/sea-bar.png') no-repeat center center / auto"></div>
-            <div class="bars__description">
-                <div class="bars__info">
-                    <div class="bars__info-icon"></div>
-                    <div class="bars__info-text">СОСТАВ</div>
-                    <div class="bars__compos-container composition">
-                        <div class="composition__container">
-                            <div class="composition__row">
-                                <div class="composition__cell composition__cell--image"></div>
-                                <div class="composition__cell composition__cell--name">
-                                    Овёс
+        <div class="bars__slider">
+            <div class="bars__bar bars__bar--sea">
+                <div class="bars__image" style="background: url('images/sea-bar.png') no-repeat center center / auto"></div>
+                <div class="bars__description">
+                    <div class="bars__info">
+                        <svg class="bars__info-icon">
+                            <use xlink:href="./sprite-svg.svg#chocolate-bar"></use>
+                        </svg>
+                        <div class="bars__info-text">СОСТАВ</div>
+                        <div class="bars__compos-container composition">
+                            <div class="composition__container">
+                                <div class="composition__row">
+                                    <div class="composition__cell composition__cell--image">
+                                        <svg class="composition__image composition__image--oat">
+                                            <use xlink:href="./sprite-svg.svg#oat"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="composition__cell composition__cell--name">
+                                        Овёс
+                                    </div>
+                                    <div class="composition__cell composition__cell--weight">25 г</div>
                                 </div>
-                                <div class="composition__cell composition__cell--weight"></div>
-                            </div>
-                            <div class="composition__row">
-                                <div class="composition__cell composition__cell--image"></div>
-                                <div class="composition__cell composition__cell--name">
-                                    Морские водоросли
+                                <div class="composition__row">
+                                    <div class="composition__cell composition__cell--image">
+                                        <svg class="composition__image composition__image--seaweed">
+                                            <use xlink:href="./sprite-svg.svg#seaweed"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="composition__cell composition__cell--name">
+                                        Мор. водоросли
+                                    </div>
+                                    <div class="composition__cell composition__cell--weight">15 г</div>
                                 </div>
-                                <div class="composition__cell composition__cell--weight"></div>
-                            </div>
-                            <div class="composition__row">
-                                <div class="composition__cell composition__cell--image"></div>
-                                <div class="composition__cell composition__cell--name">
-                                    Миндаль
+                                <div class="composition__row">
+                                    <div class="composition__cell composition__cell--image">
+                                        <svg class="composition__image composition__image--almond">
+                                            <use xlink:href="./sprite-svg.svg#almond"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="composition__cell composition__cell--name">
+                                        Миндаль
+                                    </div>
+                                    <div class="composition__cell composition__cell--weight">20 г</div>
                                 </div>
-                                <div class="composition__cell composition__cell--weight"></div>
-                            </div>
-                            <div class="composition__row">
-                                <div class="composition__cell composition__cell--image"></div>
-                                <div class="composition__cell composition__cell--name">
-                                    Сухое молоко
+                                <div class="composition__row">
+                                    <div class="composition__cell composition__cell--image">
+                                        <svg class="composition__image composition__image--washing-powder">
+                                            <use xlink:href="./sprite-svg.svg#washing-powder"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="composition__cell composition__cell--name">
+                                        Сухое молоко
+                                    </div>
+                                    <div class="composition__cell composition__cell--weight">10 г</div>
                                 </div>
-                                <div class="composition__cell composition__cell--weight"></div>
-                            </div>
-                            <div class="composition__row">
-                                <div class="composition__cell composition__cell--image"></div>
-                                <div class="composition__cell composition__cell--name">
-                                    Тыкв.семечки
+                                <div class="composition__row">
+                                    <div class="composition__cell composition__cell--image">
+                                        <svg class="composition__image">
+                                            <use xlink:href="./sprite-svg.svg#seeds"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="composition__cell composition__cell--name">
+                                        Тыкв.семечки
+                                    </div>
+                                    <div class="composition__cell composition__cell--weight">20 г</div>
                                 </div>
-                                <div class="composition__cell composition__cell--weight"></div>
+                                <div class="composition__row">
+                                    <div class="composition__cell composition__cell--image">
+                                        <svg class="composition__image composition__image--honey">
+                                            <use xlink:href="./sprite-svg.svg#honey"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="composition__cell composition__cell--name">
+                                        Зам. сахара
+                                    </div>
+                                    <div class="composition__cell composition__cell--weight">4 г</div>
+                                </div>
+                                <div class="composition__row">
+                                    <div class="composition__cell composition__cell--image">
+                                        <svg class="composition__image composition__image--beans">
+                                            <use xlink:href="./sprite-svg.svg#beans"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="composition__cell composition__cell--name">
+                                        Какао бобы
+                                    </div>
+                                    <div class="composition__cell composition__cell--weight">4 г</div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="bars__title">
-                    Батончик “Морские водоросли”
-                </div>
-                <div class="bars__text">
-                    Гранола из морских водорослей с овсом, миндалем и тыквенными семечками. В состав также входят: сухое молоко, заменитель сахара и какао бобы.
-                </div>
-                <div class="bars__numbers">
-                    <div class="bars__ccal">
-                        <p>Калорийность</p>
-                        <p><strong>120 ккал</strong></p>
+                    <div class="bars__title">
+                        Батончик “Морские водоросли”
                     </div>
-                    <div class="bars__weight">
-                        <p>Вес</p>
-                        <p><strong>98 грамм</strong></p>
+                    <div class="bars__text">
+                        Гранола из морских водорослей с овсом, миндалем и тыквенными семечками. В состав также входят: сухое молоко, заменитель сахара и какао бобы.
+                    </div>
+                    <div class="bars__numbers">
+                        <div class="bars__ccal">
+                            <p>Калорийность</p>
+                            <p><strong>120 ккал</strong></p>
+                        </div>
+                        <div class="bars__weight">
+                            <p>Вес</p>
+                            <p><strong>98 грамм</strong></p>
+                        </div>
+                    </div>
+                    <div class="bars__actions">
+                        <div class="bars__price">140 ₽</div>
+                        <button class="bars__button">ЗАКАЗАТЬ</button>
                     </div>
                 </div>
-                <div class="bars__actions">
-                    <div class="bars__price">140 P</div>
-                    <button class="bars__button">ЗАКАЗАТЬ</button>
+            </div>
+            <div class="bars__bar bars__bar--grape">
+                <div class="bars__image" style="background: url('images/grape-bar.png') no-repeat center center / auto"></div>
+                <div class="bars__description">
+                    <div class="bars__info">
+                        <svg class="bars__info-icon">
+                            <use xlink:href="./sprite-svg.svg#chocolate-bar"></use>
+                        </svg>
+                        <div class="bars__info-text">СОСТАВ</div>
+                        <div class="bars__compos-container composition">
+                            <div class="composition__container">
+                                <div class="composition__row">
+                                    <div class="composition__cell composition__cell--image">
+                                        <svg class="composition__image">
+                                            <use xlink:href="./sprite-svg.svg#grape"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="composition__cell composition__cell--name">
+                                        Виноград
+                                    </div>
+                                    <div class="composition__cell composition__cell--weight">25 г</div>
+                                </div>
+                                <div class="composition__row">
+                                    <div class="composition__cell composition__cell--image">
+                                        <svg class="composition__image">
+                                            <use xlink:href="./sprite-svg.svg#nut"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="composition__cell composition__cell--name">
+                                        Грецкий орех
+                                    </div>
+                                    <div class="composition__cell composition__cell--weight">32 г</div>
+                                </div>
+                                <div class="composition__row">
+                                    <div class="composition__cell composition__cell--image">
+                                        <svg class="composition__image">
+                                            <use xlink:href="./sprite-svg.svg#almond"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="composition__cell composition__cell--name">
+                                        Кунжутное семя
+                                    </div>
+                                    <div class="composition__cell composition__cell--weight">20 г</div>
+                                </div>
+                                <div class="composition__row">
+                                    <div class="composition__cell composition__cell--image">
+                                        <svg class="composition__image">
+                                            <use xlink:href="./sprite-svg.svg#washing-powder"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="composition__cell composition__cell--name">
+                                        Сухое молоко
+                                    </div>
+                                    <div class="composition__cell composition__cell--weight">10 г</div>
+                                </div> 
+                                <div class="composition__row">
+                                    <div class="composition__cell composition__cell--image">
+                                        <svg class="composition__image">
+                                            <use xlink:href="./sprite-svg.svg#honey"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="composition__cell composition__cell--name">
+                                        Зам. сахара
+                                    </div>
+                                    <div class="composition__cell composition__cell--weight">4 г</div>
+                                </div>
+                                <div class="composition__row">
+                                    <div class="composition__cell composition__cell--image">
+                                        <svg class="composition__image">
+                                            <use xlink:href="./sprite-svg.svg#beans"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="composition__cell composition__cell--name">
+                                        Какао бобы
+                                    </div>
+                                    <div class="composition__cell composition__cell--weight">4 г</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bars__title">
+                        Батончик “Гранола виноград”
+                    </div>
+                    <div class="bars__text">
+                        Гранола из винограда, грецкого ореха и кунжутных семечек. В состав также входят: сухое молоко, заменитель сахара и какао бобы.
+                    </div>
+                    <div class="bars__numbers">
+                        <div class="bars__ccal">
+                            <p>Калорийность</p>
+                            <p><strong>110 ккал</strong></p>
+                        </div>
+                        <div class="bars__weight">
+                            <p>Вес</p>
+                            <p><strong>95 грамм</strong></p>
+                        </div>
+                    </div>
+                    <div class="bars__actions">
+                        <div class="bars__price">140 ₽</div>
+                        <button class="bars__button">ЗАКАЗАТЬ</button>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </div>
+</section>
+
+<section class="section team">
+    <div class="container">
+        <div class="team__title">КОМАНДА</div>
+        <div class="team__container">
+            <div class="team__member member">
+                <div class="member__image" style="background: url(images/boris-fedorovich.jpg)"></div>
+                <div class="member__info">
+                    <a tabindex="0" class="member__name">Борис Федорович <span class="member__triangle-switcher"></span></a>                    
+                    <div class="member__description">                        
+                        <div class="member__occupation">Главный технолог</div>
+                        <div class="member__actions">
+                            Отвечает за вкусовые качества и калорийность.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="team__member member">
+                <div class="member__image" style="background: url(images/alla-ivanova.jpg)"></div>
+                <div class="member__info">
+                    <a tabindex="0" class="member__name">Алла Иванова <span class="member__triangle-switcher"></span></a>
+                    <div class="member__description">                 
+                        <div class="member__occupation">Специалист по упаковке</div>
+                        <div class="member__actions">
+                            Автор запоминающегося стиля наших батончиков.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="team__member member">
+                <div class="member__image" style="background: url(images/kirill-matrosov.jpg)"></div>
+                <div class="member__info">     
+                    <a tabindex="0" class="member__name">Кирилл Матросов <span class="member__triangle-switcher"></span></a>               
+                    <div class="member__description">                        
+                        <div class="member__occupation">Оператор</div>
+                        <div class="member__actions">
+                            С радостью поможет подобрать батончики и оформить заказ.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="team__member member">
+                <div class="member__image" style="background: url(images/mila-ryzhkova.jpg)"></div>
+                <div class="member__info">   
+                    <a tabindex="0" class="member__name">Мила Рыжкова <span class="member__triangle-switcher"></span></a>                 
+                    <div class="member__description">                        
+                        <div class="member__occupation">PR, маркетинг</div>
+                        <div class="member__actions">
+                            С радостью поможет подобрать батончики и оформить заказ.
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
+</section>
+
+<section class="section menu">
+    <div class="menu__title"></div>
+    <div class="menu__wrapper-accordeon">
+        <ul class="menu__accordeon-block accordeon">
+            <li class="accordeon__item">
+                <a href="" class="accordeon__btn" style="background: url(images/bar-with-milk.png);">
+                    <div class="accordeon__title">Батончики с молоком</div>
+                </a>
+                <div class="accordeon__description">
+                    <div class="accordeon__close">&#x2716;</div>
+                    <div class="accordeon__text">Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и полезнее. 
+                        Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что можно питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы.</div>
+                </div>
+            </li>
+            <li class="accordeon__item">
+                <a href="" class="accordeon__btn" style="background: url(images/bar-with-honey-and-fruits.png);">
+                    <div class="accordeon__title">С мёдом и фруктами</div>
+                </a>
+                <div class="accordeon__description">
+                    <div class="accordeon__close">&#x2716;</div>
+                    <div class="accordeon__text">Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и полезнее. 
+                            Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что можно питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы.</div>
+                </div>
+            </li>
+            <li class="accordeon__item">
+                <a href="" class="accordeon__btn" style="background: url(images/bar-wild-berries.png);">
+                    <div class="accordeon__title">Дикие ягоды</div>
+                </a>
+                <div class="accordeon__description">
+                    <div class="accordeon__close">&#x2716;</div>
+                    <div class="accordeon__text">Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и полезнее. 
+                            Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что можно питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы.</div>
+                </div>
+            </li>
+        </ul>
     </div>
 </section>
 
@@ -262,6 +527,18 @@
         </div>       
     </div>
 </section>
+
+<section class="section how-works">
+    <div class="container">
+        <div class="how-works__title">КАК МЫ РАБОТАЕМ</div>
+        <div class="how-works__video-container">
+            <!-- <video></video> -->
+            <div class="how-works__video-cover"></div>
+            <div class="how-works__play-btn"></div>
+        </div>
+    </div>
+</section>
+
 <section class="section delivery">
     <div class="container">
         <div class="delivery__title">ЗАКАЖИТЕ ДОСТАВКУ</div>
@@ -339,6 +616,33 @@
         </form>
     </div>
 </section>
+
+<ul class="page-nav" style="display: none;">
+    <li class="page-nav__item page-nav__item--active">
+        <button class="page-nav__button"></button>
+    </li>
+    <li class="page-nav__item">
+        <button class="page-nav__button"></button>
+    </li>
+     <li class="page-nav__item">
+        <button class="page-nav__button"></button>
+    </li>
+    <li class="page-nav__item">
+        <button class="page-nav__button"></button>
+    </li>
+    <li class="page-nav__item">
+        <button class="page-nav__button"></button>
+    </li>
+    <li class="page-nav__item">
+        <button class="page-nav__button"></button>
+    </li>
+    <li class="page-nav__item">
+        <button class="page-nav__button"></button>
+    </li>
+    <li class="page-nav__item">
+        <button class="page-nav__button"></button>
+    </li>
+</ul>
 
 </body>
 </html>
